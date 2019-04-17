@@ -26,7 +26,7 @@ def dictionary
  end
 
  def bulk_tweet_shortener(array_of_tweets)
-   array_of_tweets.each do |tweet|
+   array_of_tweets.map do |tweet|
      puts word_substituter(tweet)
    end
  end
